@@ -1,0 +1,121 @@
+Changelog
+
+Legend for this changelog:
++ Feature added
+- Feature removed
+! Feature fixed/updated
+? Unresolved issue
+* Note
+
+Version 2.03 beta -- 1/19/04
+! Fixed doing flips allowing reloading faster.
+! Fixed the cl_lw recoil exploit (actually, just made changing it to 0 have no effect.)
+! Fixed the screen flashing red for damages less then 1.
+! Fixed selecting an empty weapon slot switching you to kung fu.
+! Fixed Morfeo's fix of the fu script blocking system (cl_pitchspeed would never be less then 225. Now will never be more. :D)
+! Fixed The One mode.
+! Fixed hud weapon selection menu switching to the weapon which just finished reloading.
+! Fixed weapon reload twice if the button is held down.
+! Fixed not being able to dive if you jump off something.
+! Fixed reloading during a burst.
+! Fixed addbot being a client command. Is now a server command, which rcon required for.
++ Updated the recoil to be smoother.
+! "powerup" command and other such cheats only work if the map was loaded with sv_cheats 1
+! Backwards velocity changed from 4/7 max speed to 4/5 max speed.
+! Weapon damages increased from 65% to 80% of 1.5 levels.
++ Players velocity is now added to thrown knife velocities.
++ Knives will now ricochet off a wall if they strike them at a shallow angle.
+! Katanas and kung fu are now 80% as strong as before.
++ Added "addbot help" and "addcustombot help".
+
+Version 2.04 beta -- 1/23/04
+! Firearm damage changed to 75%.
+! Katana/Fu damage changed to 85%.
+! Throwing knife damage reduced to 80 max.
++ Slowed the fire rate for the rbull and deagle slightly.
++ lastinv command re-implemented. Does not work if you have kung fu out.
++ cl_accel cl_accelexp and cl_accelmax "mewcelleration" added.
+! Logs will now show Steam ID's properly.
+* Forgot to notice in 2.03 changelog that 1.5 walljumping has been reinstated in addition to 2.0 walljumping.
++ The One updated: All players will be agents except The One, who is laurence.
++ The One gets ten*players on the server frags per kill, but no more then 200 health.
+- Removed all three point score bonuses for fu, katana, knife etc kills. They are now 2.
+- Removed HL weapons (gauss egon hgrenade etc) and other HLDM entities.
+
+Version 2.05 beta -- 02/02/04
++ New combat_idle_low anim.
+! Glock 18 reload lengthened (2 seconds.)
++ Shrapnel added to grenades.
+- Removed orgasmic death sounds.
+! Throwing knife kills are now listed as such in death messages (instead of just "knife".)
++ Paintball: r_paintball shows bullet holes as colored splats.
+- Crosshair removed for fu, knives, katana, nades and the unscoped Barett.
+! You may pick up health and armor powerups even with maxed out health/armor.
+! Picking up a grenade powerup does not automatically switch to that weapon.
+! You may pick up powerups even if you already have them. There is no extra affect.
++ Added the +alt2 command for cold-cocking.
++ Added cold-cocking for the M4A1.
++ Reload button blocks in kung fu.
+! Changed "theonematch" to "mp_theonemode".
++ Added "mp_theone" and "mp_theothers" cvars for the server to set models for The One.
+! The One cannot be disarmed.
+! The Kung Fu bar represents the % of the max damage a Fu attack will do. 50% bar == 50% damage.
+! Lightened the rbull's and removed the deagle's fire rates.
+
+Version 2.06 beta -- 02/19/04
+! Rearranged buy menus. Barrett is now a rifle and sawed-off is now a shotgun.
++ Added in force chase cam (uncommented two lines of code.)
+! Tweaked the angles that chase cam uses. Equivalent to cam_back 90, cam_up 7, cam_idealpitch -10.
+! Fixed a bug that sometimes wouldnt let you select the next person in spectator mode.
++ Added first person spectator mode.
+! When you die, you resume spectating in the same mode as you were in before.
++ Saving a config is now allowed for empty configs. It just empties out the slot.
+- MAC 10 removed.
++ UMP added.
++ Added support for the mouse in the buy menu.
+! Updated version of ts_gpc
+! Updated version of ts_parking
+
+Version 2.0.7 beta -- 02/24/04
+* New version numbering scheme: major.minor.beta
+! Some balance tweaks to weapon damages.
+! Barrett leg shots are not fatal.
+- Player's velocity added to knife's removed. Too many mixed feelings among the betatesters.
+! Backflip damage is now 10.
+! Grenades are now listed as "M61 Grenade" (rather then just "grenade".)
+! Raised the speed at which victims move when slow pause is activated.
+! Client and server are now more synced to where bullets strike.
+
+Version 2.0.8 beta -- 2/29/04
+! Cold-cock added for the sawed-off.
+! SPAS 15 shotgun added.
+! Backflip damage is now 15.
+* Forgot to note in previous changelog that semi shotguns do 50% more recoil.
+! Raised Kung Fu damage 5% to 90% (2.0 level)
+! Silenced beretta p models.
+! Steam splash and Steam compatible.
+! Plus two (three total) frags for a stunt kill. Two frags for everything else.
+! New Berettas model.
+
+Version 2.0.9 beta -- 03/03/04
+- Cut SPAS 15. Not enough time to make it look good.
+- Cut first person spectator. Too many bugs, requires a total redo. Locked chase cam still in.
+! Pump shotguns full auto once again. (ala 2.0)
++ Weapons will slide along the floor if thrown outwards.
+! Fixed super roll.
+
+To do:
+-Change the order of which weapons are automatically switched to from highest price to most slots.
+-Move tsbuylist.tsa to a .cfg file instead of a binary file.
+-Some decent logging.
+-Options for RP-ers.
+-Stuff for mappers.
+
+Thanx list:
+- Kuja and Digital Paintball for the splat decals.
+- omega and the FLF team for help with an occasional problem. www.frontline2.com
+- Monkey Man for compiling the new berettas.
+- Creeping Jesus for his excellent work on the new Berettas skin.
+- Kissle for his beautiful UMP skin.
+- X-Convict for the other half of that beautiful UMP skin.
+- Debian Linux for having only one install CD, and Gentoo Linux for being so cool.
